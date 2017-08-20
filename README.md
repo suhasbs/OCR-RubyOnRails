@@ -25,10 +25,14 @@ Steps before pushing the server-side to production:
 (b) path (c) status
 6. Filename and path are of ‘string’ data type and status is of ‘integer’ data type.
 
+
+
 The server calls involved are as follows:
 1. Upload the image: root/ocr/upload/   - POST
 2. Receive coordinates: root/ocr/:id/get_coordinates/ - GET
 3. Resend the coordinates: root/ocr/:id/predict_with_coordinates/  - POST
+
+
 Gems used:
 1. Nokogiri
 2. Fileutils
